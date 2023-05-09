@@ -8,7 +8,8 @@ function App() {
   const [count, setCount] = useState(0)
   console.log(document.cookie);
 
-  Cookies.get('data')
+  let cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)data\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+  console.log(cookieValue);
 
   return (
     <>
