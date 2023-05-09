@@ -14,8 +14,8 @@ function App() {
 
   const cookieData = Cookies.get('data');
   console.log(cookieData);
-  console.log(JSON.parse(cookieData))
-  console.log(cookieData.name)
+  const data = JSON.parse(cookieData);
+  console.log("Name = "+data.name+" & Comapny = "+data.company);
   
 
   return (
