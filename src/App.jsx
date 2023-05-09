@@ -15,9 +15,9 @@ function App() {
   const cookieData = Cookies.get('data');
   console.log(cookieData);
   const data = JSON.parse(cookieData);
-  console.log("Name = "+data.name+" & Comapny = "+data.company);
+  console.log("Name = "+data.name+" & Company = "+data.company);
   
-
+  Cookies.set('page', 'subdomain', {path:'/', domain:'.singleufo.com'});
   return (
     <>
       <div>
