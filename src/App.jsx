@@ -12,8 +12,10 @@ function App() {
   // let cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)company\s*\=\s*([^;]*).*$)|^.*$/, "$1");
   // console.log(cookieValue);
 
-  console.log(Cookies.get('name'));
-  console.log(Cookies.get('data'));
+  const cookieData = Cookies.get('data');
+  console.log(cookieData);
+  console.log(JSON.parse(cookieData))
+  console.log(cookieData.name)
   
 
   return (
